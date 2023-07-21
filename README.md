@@ -6,4 +6,4 @@ valsov-1d.c : 無衝突自己重力系の1次元のVlasov-Poisson Simulationの�
 　　　　　　　　分布関数の計算はSL-MPP7スキームを用いています。
 
 
-iamge.plt : 特に意味はない
+image.plt : 特に意味はない
