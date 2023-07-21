@@ -1,3 +1,5 @@
+
+
 reset
 set term gif animate
 set output "MPP7_kk_j=0.5.gif"
