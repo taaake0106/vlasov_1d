@@ -9,4 +9,4 @@ valsov-1d.c : 無衝突自己重力系の1次元のVlasov-Poisson Simulationの�
 anime.plt : アニメーションを作成するコードです。
 
 
-![Uploading MPP7_kk_j=0.5_128.gif…]()
+
