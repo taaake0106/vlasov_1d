@@ -1,11 +1,11 @@
 #include <stdio.h>
-#define _USE_MATH_DEFINES // cが負の時　PPmとかsweepとか確認
+#define _USE_MATH_DEFINES 
 #include <math.h>
 #include <stdlib.h>
 #define R (8)
 #define N (128)
-#define NMESH_x (N)
-#define NMESH_y (N)
+#define NMESH_x (N)　//number of xmesh
+#define NMESH_y (N) //number of vmesh
 #define Ngreen (1 + NMESH_x / 2)
 #define alpha (4.0)
 #define eps (0.0) // pow(10, -10)
