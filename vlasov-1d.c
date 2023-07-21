@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 #define R (8)
-#define N (64)
+#define N (128)
 #define NMESH_x (N)
 #define NMESH_y (N)
 #define Ngreen (1 + NMESH_x / 2)
