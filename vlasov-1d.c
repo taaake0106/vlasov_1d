@@ -241,14 +241,30 @@ void sweep_y(double *f_star2, double *f_star1,
     double fr, fl;
     double fr_star1, fl_star1, fr_star2, fl_star2;
 
-    jm4 = (j - 4 + N) % N;
-    jm3 = (j - 3 + N) % N;
-    jm2 = (j - 2 + N) % N;
-    jm1 = (j - 1 + N) % N;
-    jp1 = (j + 1) % N;
-    jp2 = (j + 2) % N;
-    jp3 = (j + 3) % N;
-    jp4 = (j + 4) % N;
+    jm4 = (j - 4);
+    if (jm4 < 0)
+        jm4 = 0;
+    jm3 = (j - 3);
+    if (jm3 < 0)
+        jm3 = 0;
+    jm2 = (j - 2);
+    if (jm2 < 0)
+        jm2 = 0;
+    jm1 = (j - 1);
+    if (jm1 < 0)
+        jm1 = 0;
+    jp1 = (j + 1);
+    if (jp1 >= NMESH_y)
+        jp1 = NMESH_y - 1;
+    jp2 = (j + 2);
+    if (jp2 >= NMESH_y)
+        jp2 = NMESH_y - 1;
+    jp3 = (j + 3);
+    if (jp3 >= NMESH_y)
+        jp3 = NMESH_y - 1;
+    jp4 = (j + 4);
+    if (jp4 >= NMESH_y)
+        jp4 = NMESH_y - 1;
     if (0.0 <= csweep_y[i])
     {
 
