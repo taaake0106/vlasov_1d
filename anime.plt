@@ -1,6 +1,6 @@
 reset
 set term gif animate
-set output "MPP7_kk_j=0.5.gif"
+set output "MPP7.gif"
 set xrange[0.0:1.0]
 set yrange[-1.0:1.0]
 set pm3d 
@@ -12,9 +12,9 @@ set ylabel "v/V"
 set size square
 set palette rgbformulae 33,13,10
 
-do for [i=0:2560]{
+do for [i=0:2540]{
     if(i%10==0){
-set title sprintf("t=%d",i)
+set title sprintf("t=%f",4.0*i/2540)
      splot  sprintf("../SL-MPP7_%d.dat",i) with pm3d
 
     }
